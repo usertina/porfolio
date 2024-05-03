@@ -127,7 +127,7 @@ function hideIconText(element) {
 function mostrarProyectos() {
   contenido.innerHTML = "<h2>Mis Proyectos</h2>" +
 
-    "<a href='https://github.com/usertina/Marifarma'>" +
+    "<a href='https://marifarma.netlify.app'>" +
     "<img class='imagen' src='img_marifarma/1.png' width='250' height='250' title='Proyecto MARIFARMA'>" +
     "<img class='imagen' src='img_marifarma/2.png' width='250' height='250' title='Proyecto MARIFARMA'>" +
     "<img class='imagen' src='img_marifarma/3.png' width='250' height='250' title='Proyecto MARIFARMA'>" +
@@ -137,7 +137,7 @@ function mostrarProyectos() {
     "<img class='imagen' src='img_manga/manga2.png' width='250' height='250' title='Proyecto MANGAPOWER'>" +
     "<img class='imagen' src='img_manga/manga3.png' width='250' height='250' title='Proyecto MANGAPOWER'>" +
 
-    "<a href='https://github.com/usertina/Basauri_baloncesto'>" +
+    "<a href='https://basauribasket.netlify.app'>" +
     "<img class='imagen' src='img_baloncesto/baloncesto1.png' width='250' height='250' title='Proyecto BASAURI BALONCESTO'>" +
     "<img class='imagen' src='img_baloncesto/baloncesto2.png' width='250' height='250' title='Proyecto BASAURI BALONCESTO'>" +
     "<img class='imagen' src='img_baloncesto/baloncesto3.png' width='250' height='250' title='Proyecto BASAURI BALONCESTO'>";
