@@ -119,6 +119,9 @@ function mostrarAcercaDe() {
                          "<img src='https://img.icons8.com/plasticine/100/github.png' width='60' height='60'/>" +
                          "<span class='icon-text'>GitHub</span>" +
                          "</div>" +
+                         "<div style='text-align: center; margin: 5px; transition: transform 0.3s; position: relative;' onmouseover='showIconText(this)' onmouseout='hideIconText(this)'>" +
+                         "<img src='https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-scrum-agile-flaticons-flat-flat-icons-7.png'width='60' height='60'/>" +
+                         "<span class='icon-text'>Scrum</span>" +
                          "</div>";
 
   // Estilo para ocultar inicialmente los nombres de los iconos
