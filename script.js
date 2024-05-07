@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedText = document.getElementById("animated-text");
+  const text = animatedText.innerText;
+  animatedText.innerText = ""; // Limpiar el texto original
+
+  // Mostrar cada letra una por una
+  for (let i = 0; i < text.length; i++) {
+    const letterSpan = document.createElement("span");
+    letterSpan.textContent = text[i];
+    letterSpan.style.animationDelay = `${i * 0.3}s`; // Ajusta el retraso de la animación aquí
+    letterSpan.classList.add("show-letter");
+    animatedText.appendChild(letterSpan);
+  }
+});
+
 const modoBtn = document.getElementById('modo-btn');
 const contenido = document.getElementById('contenido');
 const videoContainer = document.getElementById('video-container');
