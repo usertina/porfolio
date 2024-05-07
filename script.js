@@ -147,7 +147,7 @@ function mostrarProyectos() {
     "<img class='imagen' src='img_marifarma/2.png' width='250' height='250' title='Proyecto MARIFARMA'>" +
     "<img class='imagen' src='img_marifarma/3.png' width='250' height='250' title='Proyecto MARIFARMA'>" +
 
-    "<a href='https://mangapower.netlify.app'>'>" +
+    "<a href='https://mangapower.netlify.app'>" +
     "<img class='imagen' src='img_manga/manga1.png' width='250' height='250' title='Proyecto MANGAPOWER'>" +
     "<img class='imagen' src='img_manga/manga2.png' width='250' height='250' title='Proyecto MANGAPOWER'>" +
     "<img class='imagen' src='img_manga/manga3.png' width='250' height='250' title='Proyecto MANGAPOWER'>" +

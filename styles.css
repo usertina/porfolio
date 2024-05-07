@@ -12,11 +12,11 @@ body{
   }
   
   .container {
-	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
-	position: relative;
-	z-index: 1;
+	height: 100vh; /* Hacer que el contenedor ocupe toda la altura de la pantalla */
+	overflow-y: auto;
+	z-index: 1; /* Hacer que el contenido haga scroll verticalmente si es necesario */
   }
   
   header {
