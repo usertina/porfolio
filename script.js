@@ -3,6 +3,24 @@ document.addEventListener("DOMContentLoaded", function() {
   const text = animatedText.innerText;
   animatedText.innerText = ""; // Limpiar el texto original
 
+   // Función para cambiar el video principal según el modo
+   function cambiarVideoPrincipal() {
+    const videoPrincipal = document.getElementById("video-principal");
+    const modoOscuro = document.body.classList.contains("modo-oscuro");
+    if (modoOscuro) {
+      videoPrincipal.src = "video/negro.mp4"; // Ruta al video oscuro
+    } else {
+      videoPrincipal.src = "video/azul.mp4"; // Ruta al video original
+    }
+  }
+
+  // Agregar un event listener para el botón "Cambiar Modo"
+  const modoBtn = document.getElementById("modo-btn");
+  modoBtn.addEventListener("click", function() {
+    document.body.classList.toggle("modo-oscuro");
+    cambiarVideoPrincipal(); // Llamar a la función para cambiar el video principal
+  });
+
   // Mostrar cada letra una por una
   for (let i = 0; i < text.length; i++) {
     const letterSpan = document.createElement("span");
