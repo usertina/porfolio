@@ -9,16 +9,17 @@
 <body>
   <div class="container">
     <header>
-      <button id="modo-btn">Cambiar Modo</button>
+      <button id="boton-idioma" data-es="Cambiar Idioma" data-en="Change Language">Cambiar Idioma</button>
+      <button id="modo-btn" data-es="Cambiar Modo" data-en="Change Mode">Cambiar Modo</button>
     </header>
     <nav>
-      <button onclick="reiniciarPagina()">Inicio</button>
-      <button onclick="mostrarAcercaDe()">Acerca de Mi</button>
-      <button onclick="mostrarProyectos()">Mis Proyectos</button>
-      <button onclick="mostrarContacto()">Contacto</button>
+      <button onclick="reiniciarPagina()" data-es="Inicio" data-en="Home">Inicio</button>
+      <button onclick="mostrarAcercaDe()" data-es="Acerca de Mi" data-en="About Me">Acerca de Mi</button>
+      <button onclick="mostrarProyectos()" data-es="Mis Proyectos" data-en="My Projects">Mis Proyectos</button>
+      <button onclick="mostrarContacto()" data-es="Contacto" data-en="Contact">Contacto</button>
     </nav>
     <main id="contenido">
-      <h1 id="animated-text">BIENVENIDOS A MI PORFOLIO</h1>
+      <h1 id="animated-text" data-es="BIENVENIDOS A MI PORTAFOLIO" data-en="WELCOME TO MY PORTFOLIO">BIENVENIDOS A MI PORTAFOLIO</h1>
       <video autoplay muted loop id="video-principal">
         <source src="video/azul.mp4" type="video/mp4">
         <!-- Agrega más elementos <source> para diferentes formatos de video -->

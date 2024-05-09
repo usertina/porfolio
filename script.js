@@ -31,6 +31,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+const botonIdioma = document.getElementById('boton-idioma');
+const textos = document.querySelectorAll('[data-es], [data-en]');
+
+let idiomaActual = 'es'; // Por defecto, el idioma es español
+
+botonIdioma.addEventListener('click', () => {
+    idiomaActual = idiomaActual === 'es' ? 'en' : 'es'; // Alternar entre español e inglés
+    cambiarIdioma();
+});
+
+function cambiarIdioma() {
+    textos.forEach(elemento => {
+        if (idiomaActual === 'es') {
+            elemento.textContent = elemento.getAttribute('data-es');
+        } else {
+            elemento.textContent = elemento.getAttribute('data-en');
+        }
+    });
+}
+
+// Cambiar el idioma cuando la página cargue
+document.addEventListener('DOMContentLoaded', cambiarIdioma);
+
+
 const modoBtn = document.getElementById('modo-btn');
 const contenido = document.getElementById('contenido');
 const videoContainer = document.getElementById('video-container');
